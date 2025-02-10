@@ -18,6 +18,58 @@ const mockQuestions = [
   },
   {
     id: '2',
+    text: 'A particle moves in a straight line with constant acceleration. If its initial velocity is u and it travels a distance s in time t, then its final velocity v is given by:',
+    options: [
+      'v² = u² + 2as',
+      'v = u + at',
+      'v = s/t',
+      'v = u + s/t'
+    ],
+    correctAnswer: 0,
+    subject: 'physics',
+    marks: 4
+  },
+  {
+    id: '3',
+    text: 'A particle moves in a straight line with constant acceleration. If its initial velocity is u and it travels a distance s in time t, then its final velocity v is given by:',
+    options: [
+      'v² = u² + 2as',
+      'v = u + at',
+      'v = s/t',
+      'v = u + s/t'
+    ],
+    correctAnswer: 0,
+    subject: 'physics',
+    marks: 4
+  },
+  {
+    id: '4',
+    text: 'A particle moves in a straight line with constant acceleration. If its initial velocity is u and it travels a distance s in time t, then its final velocity v is given by:',
+    options: [
+      'v² = u² + 2as',
+      'v = u + at',
+      'v = s/t',
+      'v = u + s/t'
+    ],
+    correctAnswer: 0,
+    subject: 'physics',
+    marks: 4
+  },
+  {
+    id: '5',
+    text: 'A particle moves in a straight line with constant acceleration. If its initial velocity is u and it travels a distance s in time t, then its final velocity v is given by:',
+    options: [
+      'v² = u² + 2as',
+      'v = u + at',
+      'v = s/t',
+      'v = u + s/t'
+    ],
+    correctAnswer: 0,
+    subject: 'physics',
+    marks: 4
+  },
+  {
+    id: '6',
     text: 'What is the pH of a 0.1M HCl solution?',
     options: [
       '1',
@@ -30,7 +82,98 @@ const mockQuestions = [
     marks: 4
   },
   {
-    id: '3',
+    id: '7',
+    text: 'What is the pH of a 0.1M HCl solution?',
+    options: [
+      '1',
+      '2',
+      '7',
+      '14'
+    ],
+    correctAnswer: 0,
+    subject: 'chemistry',
+    marks: 4
+  },
+  {
+    id: '8',
+    text: 'What is the pH of a 0.1M HCl solution?',
+    options: [
+      '1',
+      '2',
+      '7',
+      '14'
+    ],
+    correctAnswer: 0,
+    subject: 'chemistry',
+    marks: 4
+  },
+  {
+    id: '9',
+    text: 'What is the pH of a 0.1M HCl solution?',
+    options: [
+      '1',
+      '2',
+      '7',
+      '14'
+    ],
+    correctAnswer: 0,
+    subject: 'chemistry',
+    marks: 4
+  },
+  {
+    id: '10',
+    text: 'What is the pH of a 0.1M HCl solution?',
+    options: [
+      '1',
+      '2',
+      '7',
+      '14'
+    ],
+    correctAnswer: 0,
+    subject: 'chemistry',
+    marks: 4
+  },
+  {
+    id: '11',
+    text: 'If f(x) = x² + 2x + 1, what is f\'(x)?',
+    options: [
+      '2x + 2',
+      'x + 2',
+      '2x',
+      'x + 1'
+    ],
+    correctAnswer: 0,
+    subject: 'mathematics',
+    marks: 4
+  },
+  {
+    id: '12',
+    text: 'If f(x) = x² + 2x + 1, what is f\'(x)?',
+    options: [
+      '2x + 2',
+      'x + 2',
+      '2x',
+      'x + 1'
+    ],
+    correctAnswer: 0,
+    subject: 'mathematics',
+    marks: 4
+  },
+  {
+    id: '13',
+    text: 'If f(x) = x² + 2x + 1, what is f\'(x)?',
+    options: [
+      '2x + 2',
+      'x + 2',
+      '2x',
+      'x + 1'
+    ],
+    correctAnswer: 0,
+    subject: 'mathematics',
+    marks: 4
+  },
+  {
+    id: '14',
     text: 'If f(x) = x² + 2x + 1, what is f\'(x)?',
     options: [
       '2x + 2',

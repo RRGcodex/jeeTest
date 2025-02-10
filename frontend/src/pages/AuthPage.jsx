@@ -3,6 +3,7 @@ import { useNavigate, useParams } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Mail, Lock } from 'lucide-react';
 import axios from "axios"
+import {toast} from "react-hot-toast"
 const AuthPage = () => {
   const navigate = useNavigate();
   const { mode } = useParams(); 
@@ -15,20 +16,38 @@ const AuthPage = () => {
     if (isLogin) {
       try {
         const response = await axios.post(
+          `${import.meta.env.VITE_SERVER_BASE_URL}/api/auth/login`,
+          {email, password},
+          { withCredentials: true }
+        );
+        if(response?.data?.success){
+          sessionStorage.setItem("userData" , JSON.stringify(response?.data?.userData));
+          toast.success(response.data.message)
+          navigate('/user/dashboard');
+        }
+      } catch (error) {
+        toast.error(error.response.data.message)
+        console.error(error)
+      }
+      
+    } else {
+      try {
+        const response = await axios.post(
           `${import.meta.env.VITE_SERVER_BASE_URL}/api/auth/register`,
           {email, password},
           { withCredentials: true }
         );
+        if(response?.data?.success){
+          sessionStorage.setItem("userData" , JSON.stringify(response?.data?.userData));
+          toast.success(response.data.message)
+          navigate('/user/dashboard');
+        }
+        
       } catch (error) {
         console.error(error)
+        toast.error(error.response.data.message)
       }
-      
-      console.log('Logging in with:', email, password);
-      localStorage.setItem('auth', 'true');
-      navigate('/user/dashboard');
-    } else {
-      console.log('Signing up with:', email, password);
-      navigate('/user/dashboard');
+     
     }
   };
 
